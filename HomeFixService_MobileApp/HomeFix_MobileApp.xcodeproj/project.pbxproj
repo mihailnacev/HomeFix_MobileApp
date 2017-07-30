@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		121149BD1F2E188C00D3993A /* RegistrationOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121149BC1F2E188C00D3993A /* RegistrationOneViewController.swift */; };
+		121149BF1F2E18A500D3993A /* RegistrationTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121149BE1F2E18A500D3993A /* RegistrationTwoViewController.swift */; };
+		127240161F24D1650021BD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127240151F24D1650021BD41 /* AppDelegate.swift */; };
+		1272401B1F24D1650021BD41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127240191F24D1650021BD41 /* Main.storyboard */; };
+		1272401E1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1272401C1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodeld */; };
+		127240201F24D1650021BD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1272401F1F24D1650021BD41 /* Assets.xcassets */; };
+		1272402B1F24DA9C0021BD41 /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1272402A1F24DA9C0021BD41 /* RegistrationPageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		121149BC1F2E188C00D3993A /* RegistrationOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationOneViewController.swift; sourceTree = "<group>"; };
+		121149BE1F2E18A500D3993A /* RegistrationTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTwoViewController.swift; sourceTree = "<group>"; };
+		127240121F24D1650021BD41 /* HomeFix_MobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeFix_MobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		127240151F24D1650021BD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1272401A1F24D1650021BD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1272401D1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeFixService_MobileApp.xcdatamodel; sourceTree = "<group>"; };
+		1272401F1F24D1650021BD41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		127240241F24D1650021BD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1272402A1F24DA9C0021BD41 /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1272400F1F24D1650021BD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		127240091F24D1650021BD41 = {
+			isa = PBXGroup;
+			children = (
+				127240141F24D1650021BD41 /* HomeFix_MobileApp */,
+				127240131F24D1650021BD41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		127240131F24D1650021BD41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				127240121F24D1650021BD41 /* HomeFix_MobileApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		127240141F24D1650021BD41 /* HomeFix_MobileApp */ = {
+			isa = PBXGroup;
+			children = (
+				127240151F24D1650021BD41 /* AppDelegate.swift */,
+				127240191F24D1650021BD41 /* Main.storyboard */,
+				1272401F1F24D1650021BD41 /* Assets.xcassets */,
+				127240241F24D1650021BD41 /* Info.plist */,
+				1272401C1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodeld */,
+				1272402A1F24DA9C0021BD41 /* RegistrationPageViewController.swift */,
+				121149BC1F2E188C00D3993A /* RegistrationOneViewController.swift */,
+				121149BE1F2E18A500D3993A /* RegistrationTwoViewController.swift */,
+			);
+			name = HomeFix_MobileApp;
+			path = HomeFixService_MobileApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		127240111F24D1650021BD41 /* HomeFix_MobileApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 127240271F24D1650021BD41 /* Build configuration list for PBXNativeTarget "HomeFix_MobileApp" */;
+			buildPhases = (
+				1272400E1F24D1650021BD41 /* Sources */,
+				1272400F1F24D1650021BD41 /* Frameworks */,
+				127240101F24D1650021BD41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeFix_MobileApp;
+			productName = HomeFixService_MobileApp;
+			productReference = 127240121F24D1650021BD41 /* HomeFix_MobileApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1272400A1F24D1650021BD41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = FINKI_Skopje;
+				TargetAttributes = {
+					127240111F24D1650021BD41 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1272400D1F24D1650021BD41 /* Build configuration list for PBXProject "HomeFix_MobileApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 127240091F24D1650021BD41;
+			productRefGroup = 127240131F24D1650021BD41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				127240111F24D1650021BD41 /* HomeFix_MobileApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		127240101F24D1650021BD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				127240201F24D1650021BD41 /* Assets.xcassets in Resources */,
+				1272401B1F24D1650021BD41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1272400E1F24D1650021BD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1272401E1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodeld in Sources */,
+				1272402B1F24DA9C0021BD41 /* RegistrationPageViewController.swift in Sources */,
+				121149BF1F2E18A500D3993A /* RegistrationTwoViewController.swift in Sources */,
+				121149BD1F2E188C00D3993A /* RegistrationOneViewController.swift in Sources */,
+				127240161F24D1650021BD41 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		127240191F24D1650021BD41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1272401A1F24D1650021BD41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		127240251F24D1650021BD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		127240261F24D1650021BD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		127240281F24D1650021BD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HomeFixService_MobileApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FINKI-Skopje.HomeFix-MobileApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		127240291F24D1650021BD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HomeFixService_MobileApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FINKI-Skopje.HomeFix-MobileApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1272400D1F24D1650021BD41 /* Build configuration list for PBXProject "HomeFix_MobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				127240251F24D1650021BD41 /* Debug */,
+				127240261F24D1650021BD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		127240271F24D1650021BD41 /* Build configuration list for PBXNativeTarget "HomeFix_MobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				127240281F24D1650021BD41 /* Debug */,
+				127240291F24D1650021BD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1272401C1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1272401D1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodel */,
+			);
+			currentVersion = 1272401D1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodel */;
+			path = HomeFixService_MobileApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1272400A1F24D1650021BD41 /* Project object */;
+}
