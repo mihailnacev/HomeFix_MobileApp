@@ -14,6 +14,7 @@
 		1272401E1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1272401C1F24D1650021BD41 /* HomeFixService_MobileApp.xcdatamodeld */; };
 		127240201F24D1650021BD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1272401F1F24D1650021BD41 /* Assets.xcassets */; };
 		1272402B1F24DA9C0021BD41 /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1272402A1F24DA9C0021BD41 /* RegistrationPageViewController.swift */; };
+		128FD3F41F406EFF00DD5D41 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD3F31F406EFF00DD5D41 /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1272401F1F24D1650021BD41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		127240241F24D1650021BD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1272402A1F24DA9C0021BD41 /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
+		128FD3F31F406EFF00DD5D41 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1272402A1F24DA9C0021BD41 /* RegistrationPageViewController.swift */,
 				121149BC1F2E188C00D3993A /* RegistrationOneViewController.swift */,
 				121149BE1F2E18A500D3993A /* RegistrationTwoViewController.swift */,
+				128FD3F31F406EFF00DD5D41 /* SplitViewController.swift */,
 			);
 			name = HomeFix_MobileApp;
 			path = HomeFixService_MobileApp;
@@ -147,6 +150,7 @@
 				121149BF1F2E18A500D3993A /* RegistrationTwoViewController.swift in Sources */,
 				121149BD1F2E188C00D3993A /* RegistrationOneViewController.swift in Sources */,
 				127240161F24D1650021BD41 /* AppDelegate.swift in Sources */,
+				128FD3F41F406EFF00DD5D41 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,9 @@ class RegistrationTwoViewController: UIViewController, UIPickerViewDataSource, U
     
     var list = ["1", "2", "3"]
     
+    @IBAction func seague(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
