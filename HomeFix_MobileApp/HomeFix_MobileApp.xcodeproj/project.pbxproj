@@ -19,16 +19,15 @@
 		12512D091F4DBB2300D074BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D081F4DBB2300D074BD /* MainViewController.swift */; };
 		126C0B921F5ED8D3009BB908 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B911F5ED8D2009BB908 /* Users.swift */; };
 		126C0B941F5EDB4A009BB908 /* UserProfessions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B931F5EDB4A009BB908 /* UserProfessions.swift */; };
-		126C0B961F5EDF9B009BB908 /* UserPasswordsHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B951F5EDF9B009BB908 /* UserPasswordsHistory.swift */; };
 		126C0B981F5EE12F009BB908 /* UserAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B971F5EE12F009BB908 /* UserAddresses.swift */; };
 		126C0B9A1F5EE3B2009BB908 /* TimeSchedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B991F5EE3B2009BB908 /* TimeSchedules.swift */; };
 		126C0B9C1F5EE57E009BB908 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B9B1F5EE57E009BB908 /* Ratings.swift */; };
 		126C0B9E1F5EE636009BB908 /* Professions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B9D1F5EE636009BB908 /* Professions.swift */; };
 		126C0BA01F5EE707009BB908 /* ProfessionServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B9F1F5EE707009BB908 /* ProfessionServices.swift */; };
 		126C0BA21F5EE826009BB908 /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA11F5EE826009BB908 /* Currencies.swift */; };
-		126C0BA41F5EE8B3009BB908 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA31F5EE8B3009BB908 /* Credentials.swift */; };
 		126C0BA61F5EE954009BB908 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA51F5EE954009BB908 /* Contacts.swift */; };
 		126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */; };
+		1E70514B1F63F0BF00F8A08D /* ApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E70514A1F63F0BF00F8A08D /* ApiModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,16 +45,15 @@
 		12512D081F4DBB2300D074BD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		126C0B911F5ED8D2009BB908 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		126C0B931F5EDB4A009BB908 /* UserProfessions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfessions.swift; sourceTree = "<group>"; };
-		126C0B951F5EDF9B009BB908 /* UserPasswordsHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPasswordsHistory.swift; sourceTree = "<group>"; };
 		126C0B971F5EE12F009BB908 /* UserAddresses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAddresses.swift; sourceTree = "<group>"; };
 		126C0B991F5EE3B2009BB908 /* TimeSchedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSchedules.swift; sourceTree = "<group>"; };
 		126C0B9B1F5EE57E009BB908 /* Ratings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
 		126C0B9D1F5EE636009BB908 /* Professions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Professions.swift; sourceTree = "<group>"; };
 		126C0B9F1F5EE707009BB908 /* ProfessionServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessionServices.swift; sourceTree = "<group>"; };
 		126C0BA11F5EE826009BB908 /* Currencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
-		126C0BA31F5EE8B3009BB908 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		126C0BA51F5EE954009BB908 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusySchedules.swift; sourceTree = "<group>"; };
+		1E70514A1F63F0BF00F8A08D /* ApiModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,20 +105,27 @@
 		126C0B901F5ED862009BB908 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1E7051491F63F08900F8A08D /* ApiModels */,
 				126C0B911F5ED8D2009BB908 /* Users.swift */,
 				126C0B931F5EDB4A009BB908 /* UserProfessions.swift */,
-				126C0B951F5EDF9B009BB908 /* UserPasswordsHistory.swift */,
 				126C0B971F5EE12F009BB908 /* UserAddresses.swift */,
 				126C0B991F5EE3B2009BB908 /* TimeSchedules.swift */,
 				126C0B9B1F5EE57E009BB908 /* Ratings.swift */,
 				126C0B9D1F5EE636009BB908 /* Professions.swift */,
 				126C0B9F1F5EE707009BB908 /* ProfessionServices.swift */,
 				126C0BA11F5EE826009BB908 /* Currencies.swift */,
-				126C0BA31F5EE8B3009BB908 /* Credentials.swift */,
 				126C0BA51F5EE954009BB908 /* Contacts.swift */,
 				126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		1E7051491F63F08900F8A08D /* ApiModels */ = {
+			isa = PBXGroup;
+			children = (
+				1E70514A1F63F0BF00F8A08D /* ApiModels.swift */,
+			);
+			name = ApiModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				126C0B961F5EDF9B009BB908 /* UserPasswordsHistory.swift in Sources */,
 				124BA6431F4C4911001B2C87 /* HomeFix_MobileApp.xcdatamodeld in Sources */,
 				126C0B9E1F5EE636009BB908 /* Professions.swift in Sources */,
 				126C0B921F5ED8D3009BB908 /* Users.swift in Sources */,
@@ -203,12 +207,12 @@
 				12512D071F4DB30400D074BD /* SplitViewController.swift in Sources */,
 				12512D011F4DA22200D074BD /* RegistrationTwo.swift in Sources */,
 				126C0BA21F5EE826009BB908 /* Currencies.swift in Sources */,
+				1E70514B1F63F0BF00F8A08D /* ApiModels.swift in Sources */,
 				126C0B9C1F5EE57E009BB908 /* Ratings.swift in Sources */,
 				124BA63D1F4C4911001B2C87 /* RegistrationOne.swift in Sources */,
 				126C0B981F5EE12F009BB908 /* UserAddresses.swift in Sources */,
 				12512D031F4DB12E00D074BD /* MasterTableViewController.swift in Sources */,
 				126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */,
-				126C0BA41F5EE8B3009BB908 /* Credentials.swift in Sources */,
 				126C0B9A1F5EE3B2009BB908 /* TimeSchedules.swift in Sources */,
 				124BA63B1F4C4911001B2C87 /* AppDelegate.swift in Sources */,
 				12512D051F4DB16200D074BD /* DetailsViewController.swift in Sources */,

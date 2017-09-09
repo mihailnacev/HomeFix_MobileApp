@@ -21,4 +21,5 @@ class BusySchedules {
         self.TheUserThatIsNotAvailableForThesePeriods=TheUserThatIsNotAvailableForThesePeriods
     }
 
+  init() {}
 }

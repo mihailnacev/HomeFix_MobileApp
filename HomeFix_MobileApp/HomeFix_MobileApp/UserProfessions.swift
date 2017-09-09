@@ -20,6 +20,7 @@ class UserProfessions{
         self.User=User
         self.Services=Services
     }
-    
+  
+  init() {}
 
 }

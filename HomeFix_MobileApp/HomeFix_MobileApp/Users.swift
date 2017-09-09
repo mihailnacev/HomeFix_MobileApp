@@ -21,6 +21,8 @@ class Users{
     var TheProfessionsThatThisUserKnows: [UserProfessions]?
     var TheTimeScheduleForThisUser: [TimeSchedules]?
     var TheBusyScheduleForThisUser: [BusySchedules]?
+  
+  init() {}
     
     init(UserFirstName: String, UserLastName: String, RatingCount: Int, RatingSum: Int, TheContactsForThisUser: [Contacts], TheRatingsGivenForThisUser: [Ratings], TheAddressesThatThisUserWorksOn: [UserAddresses], TheProfessionsThatThisUserKnows: [UserProfessions], TheTimeScheduleForThisUser: [TimeSchedules], TheBusyScheduleForThisUser: [BusySchedules]){
         

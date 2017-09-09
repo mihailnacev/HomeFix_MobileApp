@@ -26,4 +26,6 @@ class UserAddresses {
         self.Longitude=Longitude
         self.TheUserLivingOnThisAddress=TheUserLivingOnThisAddress
     }
+  
+  init() {}
 }

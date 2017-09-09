@@ -19,4 +19,6 @@ class Professions {
         self.ProfessionDescription=ProffessionDescription
     }
 
+  init() {}
+  
 }

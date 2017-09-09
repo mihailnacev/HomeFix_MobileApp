@@ -25,4 +25,5 @@ class ProfessionServices{
         self.TheProfessionForThisService=TheProfessionForThisService
     }
 
+  init() {}
 }

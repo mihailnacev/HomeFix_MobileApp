@@ -18,4 +18,6 @@ class Currencies {
         self.CurrencyFullName=CurrencyFullName
         self.CurrencySign=CurrencySign
     }
+  
+  init() {}
 }

@@ -13,6 +13,8 @@ class Contacts {
     var Id: Int?
     var PhoneNumber: String?
     var ThePhoneOwner: Users?
+  
+    init() {}
     
     init(PhoneNumber: String, ThePhoneOwner: Users){
         self.PhoneNumber=PhoneNumber

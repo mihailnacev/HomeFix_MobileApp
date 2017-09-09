@@ -20,4 +20,6 @@ class Ratings{
         self.FeedbackPoints=FeedbackPoints
         self.TheRatedUser=TheRatedUser
     }
+  
+  init() {}
 }

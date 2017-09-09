@@ -11,17 +11,19 @@ import UIKit
 class TimeSchedules: NSObject {
     
     var Id: Int?
-    var StartDay: String?
+    var StartDay: Int?
     var StartTime: String?
-    var EndDay: String?
+    var EndDay: Int?
     var EndTime:String?
     var TheUserThatWorksOnThisSchedule: Users?
     
-    init(StartDay: String, StartTime: String, EndDay: String, EndTime: String, TheUserThatWorksOnThisSchedule: Users){
+    init(StartDay: Int, StartTime: String, EndDay: Int, EndTime: String, TheUserThatWorksOnThisSchedule: Users){
        self.StartDay=StartDay
        self.StartTime=StartTime
        self.EndDay=EndDay
        self.EndTime=EndTime
        self.TheUserThatWorksOnThisSchedule=TheUserThatWorksOnThisSchedule
     }
+  
+  override init() {}
 }
