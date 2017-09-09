@@ -8,19 +8,27 @@
 
 import UIKit
 
-class UserRegistrationModel{
+class UserRegistrationModel 	{
   
   var FirstName: String?
   var LastName: String?
   var UserName: String?
   var Password: String?
   
-  init(FirstName: String,LastName: String, UserName: String,Password: String
-) {
+  init(FirstName: String,LastName: String, UserName: String,Password: String) {
     self.FirstName = FirstName
     self.LastName = LastName
     self.UserName = UserName
     self.Password = Password
+  }
+  
+  func toJSON() -> [String: String]{
+    return [
+      "FirstName":FirstName!,
+      "LastName":LastName!,
+      "UserName":UserName!,
+      "Password":Password!
+    ]
   }
 }
 

@@ -15,27 +15,23 @@ class Users{
     var UserLastName: String?
     var RatingCount: Int?
     var RatingSum: Int?
-    var TheContactsForThisUser: [Contacts]?
-    var TheRatingsGivenForThisUser: [Ratings]?
-    var TheAddressesThatThisUserWorksOn: [UserAddresses]?
-    var TheProfessionsThatThisUserKnows: [UserProfessions]?
-    var TheTimeScheduleForThisUser: [TimeSchedules]?
-    var TheBusyScheduleForThisUser: [BusySchedules]?
   
   init() {}
+  
+  init(data: [String: AnyObject]) {
+    self.UserFirstName = data["UserFirstName"] as? String ?? ""
+    self.UserLastName = data["UserLastName"] as? String ?? ""
+    self.RatingSum = data["RatingSum"] as? Int ?? 0
+    self.RatingCount = data["RatingCount"] as? Int ?? 0
+    self.Id = data["Id"] as? Int ?? 0
+  }
     
-    init(UserFirstName: String, UserLastName: String, RatingCount: Int, RatingSum: Int, TheContactsForThisUser: [Contacts], TheRatingsGivenForThisUser: [Ratings], TheAddressesThatThisUserWorksOn: [UserAddresses], TheProfessionsThatThisUserKnows: [UserProfessions], TheTimeScheduleForThisUser: [TimeSchedules], TheBusyScheduleForThisUser: [BusySchedules]){
-        
+  init(Id: Int, UserFirstName: String, UserLastName: String, RatingCount: Int, RatingSum: Int){
+        self.Id = Id
         self.UserFirstName=UserFirstName
         self.UserLastName=UserLastName
         self.RatingCount=RatingCount
         self.RatingSum=RatingSum
-        self.TheContactsForThisUser=TheContactsForThisUser
-        self.TheRatingsGivenForThisUser=TheRatingsGivenForThisUser
-        self.TheAddressesThatThisUserWorksOn=TheAddressesThatThisUserWorksOn
-        self.TheProfessionsThatThisUserKnows=TheProfessionsThatThisUserKnows
-        self.TheTimeScheduleForThisUser=TheTimeScheduleForThisUser
-        self.TheBusyScheduleForThisUser=TheBusyScheduleForThisUser
     }
 
 }

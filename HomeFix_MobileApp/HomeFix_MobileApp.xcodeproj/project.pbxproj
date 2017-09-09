@@ -28,6 +28,7 @@
 		126C0BA61F5EE954009BB908 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA51F5EE954009BB908 /* Contacts.swift */; };
 		126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */; };
 		1E70514B1F63F0BF00F8A08D /* ApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E70514A1F63F0BF00F8A08D /* ApiModels.swift */; };
+		1E7051521F641FF600F8A08D /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7051511F641FF600F8A08D /* BaseServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		126C0BA51F5EE954009BB908 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusySchedules.swift; sourceTree = "<group>"; };
 		1E70514A1F63F0BF00F8A08D /* ApiModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiModels.swift; sourceTree = "<group>"; };
+		1E7051511F641FF600F8A08D /* BaseServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		124BA6391F4C4911001B2C87 /* HomeFix_MobileApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E7051501F641FCF00F8A08D /* Services */,
 				126C0B901F5ED862009BB908 /* Models */,
 				124BA63A1F4C4911001B2C87 /* AppDelegate.swift */,
 				124BA63C1F4C4911001B2C87 /* RegistrationOne.swift */,
@@ -126,6 +129,14 @@
 				1E70514A1F63F0BF00F8A08D /* ApiModels.swift */,
 			);
 			name = ApiModels;
+			sourceTree = "<group>";
+		};
+		1E7051501F641FCF00F8A08D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E7051511F641FF600F8A08D /* BaseServices.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				126C0B9C1F5EE57E009BB908 /* Ratings.swift in Sources */,
 				124BA63D1F4C4911001B2C87 /* RegistrationOne.swift in Sources */,
 				126C0B981F5EE12F009BB908 /* UserAddresses.swift in Sources */,
+				1E7051521F641FF600F8A08D /* BaseServices.swift in Sources */,
 				12512D031F4DB12E00D074BD /* MasterTableViewController.swift in Sources */,
 				126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */,
 				126C0B9A1F5EE3B2009BB908 /* TimeSchedules.swift in Sources */,
