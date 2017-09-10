@@ -1,0 +1,57 @@
+
+/* Class = "UIButton"; normalTitle = "LogIn"; ObjectID = "0wd-WV-J4h"; */
+"0wd-WV-J4h.normalTitle" = "LogIn";
+
+/* Class = "UILabel"; text = "Registration Part I"; ObjectID = "1ZP-sz-ig9"; */
+"1ZP-sz-ig9.text" = "Registration Part I";
+
+/* Class = "UILabel"; text = "First Name:"; ObjectID = "BdQ-2H-La2"; */
+"BdQ-2H-La2.text" = "First Name:";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "IDo-NQ-85i"; */
+"IDo-NQ-85i.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "Home number:"; ObjectID = "LFa-TR-28L"; */
+"LFa-TR-28L.text" = "Home number:";
+
+/* Class = "UILabel"; text = "Username:"; ObjectID = "MPC-mB-KYi"; */
+"MPC-mB-KYi.text" = "Username:";
+
+/* Class = "UILabel"; text = "Registration Part II"; ObjectID = "ODl-Jk-6fc"; */
+"ODl-Jk-6fc.text" = "Registration Part II";
+
+/* Class = "UILabel"; text = "Last Name:"; ObjectID = "QAn-zH-JdX"; */
+"QAn-zH-JdX.text" = "Last Name:";
+
+/* Class = "UIButton"; normalTitle = "Next step"; ObjectID = "Tg1-6B-evY"; */
+"Tg1-6B-evY.normalTitle" = "Next step";
+
+/* Class = "UILabel"; text = "Mobile number:"; ObjectID = "Vl5-Od-RZx"; */
+"Vl5-Od-RZx.text" = "Mobile number:";
+
+/* Class = "UILabel"; text = "Username:"; ObjectID = "bcK-mx-Chb"; */
+"bcK-mx-Chb.text" = "Username:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "eR7-gy-8Xp"; */
+"eR7-gy-8Xp.text" = "Password:";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fps-dX-IyC"; */
+"fps-dX-IyC.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Registration Part III"; ObjectID = "kjG-hi-Qbe"; */
+"kjG-hi-Qbe.title" = "Registration Part III";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "l2p-u6-5Gj"; */
+"l2p-u6-5Gj.text" = "Password:";
+
+/* Class = "UILabel"; text = "Login View"; ObjectID = "pwm-Uc-6Ua"; */
+"pwm-Uc-6Ua.text" = "Login View";
+
+/* Class = "UIButton"; normalTitle = "Add service"; ObjectID = "rHe-a1-9z3"; */
+"rHe-a1-9z3.normalTitle" = "Add service";
+
+/* Class = "UILabel"; text = "Assign Proffesion"; ObjectID = "sAZ-fg-2L6"; */
+"sAZ-fg-2L6.text" = "Assign Proffesion";
+
+/* Class = "UIButton"; normalTitle = "Next step"; ObjectID = "sQe-78-EcW"; */
+"sQe-78-EcW.normalTitle" = "Next step";

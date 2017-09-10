@@ -32,6 +32,22 @@ class UserRegistrationModel 	{
   }
 }
 
+class LoginModel {
+  var UserName: String?
+  var Password: String?
+  
+  init(UserName: String,Password: String) {
+    self.UserName = UserName
+    self.Password = Password
+  }
+  
+  func toURLEncoded() -> String{
+    let escapeUsername = UserName!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+    let escapePassword = Password!.addingPercentEncoding(withAllowedCharacters: .urlPasswordAllowed)
+    return "grant_type=password&username=\(escapeUsername ?? "" )&password=\(escapePassword ?? "" )"
+  }
+}
+
 class UserUpdateModel {
   var FirstName: String?
   var LastName: String?

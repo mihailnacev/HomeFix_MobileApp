@@ -29,6 +29,8 @@
 		126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */; };
 		1E70514B1F63F0BF00F8A08D /* ApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E70514A1F63F0BF00F8A08D /* ApiModels.swift */; };
 		1E7051521F641FF600F8A08D /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7051511F641FF600F8A08D /* BaseServices.swift */; };
+		1E87342A1F656E6000B46A4F /* ApplicationUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8734291F656E6000B46A4F /* ApplicationUser.swift */; };
+		1E87342D1F65868500B46A4F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E87342C1F65868500B46A4F /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusySchedules.swift; sourceTree = "<group>"; };
 		1E70514A1F63F0BF00F8A08D /* ApiModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiModels.swift; sourceTree = "<group>"; };
 		1E7051511F641FF600F8A08D /* BaseServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
+		1E8734291F656E6000B46A4F /* ApplicationUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationUser.swift; sourceTree = "<group>"; };
+		1E87342C1F65868500B46A4F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,16 +95,11 @@
 				1E7051501F641FCF00F8A08D /* Services */,
 				126C0B901F5ED862009BB908 /* Models */,
 				124BA63A1F4C4911001B2C87 /* AppDelegate.swift */,
-				124BA63C1F4C4911001B2C87 /* RegistrationOne.swift */,
+				1E87342B1F65864800B46A4F /* Controllers */,
 				124BA63E1F4C4911001B2C87 /* Main.storyboard */,
 				124BA6441F4C4911001B2C87 /* Assets.xcassets */,
 				124BA6491F4C4912001B2C87 /* Info.plist */,
 				124BA6411F4C4911001B2C87 /* HomeFix_MobileApp.xcdatamodeld */,
-				12512D001F4DA22200D074BD /* RegistrationTwo.swift */,
-				12512D021F4DB12E00D074BD /* MasterTableViewController.swift */,
-				12512D041F4DB16200D074BD /* DetailsViewController.swift */,
-				12512D061F4DB30300D074BD /* SplitViewController.swift */,
-				12512D081F4DBB2300D074BD /* MainViewController.swift */,
 			);
 			path = HomeFix_MobileApp;
 			sourceTree = "<group>";
@@ -127,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				1E70514A1F63F0BF00F8A08D /* ApiModels.swift */,
+				1E8734291F656E6000B46A4F /* ApplicationUser.swift */,
 			);
 			name = ApiModels;
 			sourceTree = "<group>";
@@ -137,6 +137,20 @@
 				1E7051511F641FF600F8A08D /* BaseServices.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		1E87342B1F65864800B46A4F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				124BA63C1F4C4911001B2C87 /* RegistrationOne.swift */,
+				12512D001F4DA22200D074BD /* RegistrationTwo.swift */,
+				12512D021F4DB12E00D074BD /* MasterTableViewController.swift */,
+				12512D041F4DB16200D074BD /* DetailsViewController.swift */,
+				12512D061F4DB30300D074BD /* SplitViewController.swift */,
+				12512D081F4DBB2300D074BD /* MainViewController.swift */,
+				1E87342C1F65868500B46A4F /* MenuViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,12 +232,14 @@
 				12512D071F4DB30400D074BD /* SplitViewController.swift in Sources */,
 				12512D011F4DA22200D074BD /* RegistrationTwo.swift in Sources */,
 				126C0BA21F5EE826009BB908 /* Currencies.swift in Sources */,
+				1E87342A1F656E6000B46A4F /* ApplicationUser.swift in Sources */,
 				1E70514B1F63F0BF00F8A08D /* ApiModels.swift in Sources */,
 				126C0B9C1F5EE57E009BB908 /* Ratings.swift in Sources */,
 				124BA63D1F4C4911001B2C87 /* RegistrationOne.swift in Sources */,
 				126C0B981F5EE12F009BB908 /* UserAddresses.swift in Sources */,
 				1E7051521F641FF600F8A08D /* BaseServices.swift in Sources */,
 				12512D031F4DB12E00D074BD /* MasterTableViewController.swift in Sources */,
+				1E87342D1F65868500B46A4F /* MenuViewController.swift in Sources */,
 				126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */,
 				126C0B9A1F5EE3B2009BB908 /* TimeSchedules.swift in Sources */,
 				124BA63B1F4C4911001B2C87 /* AppDelegate.swift in Sources */,

@@ -15,49 +15,69 @@ class RegistrationOne: UIViewController {
   @IBOutlet weak var UserNameField: UITextField!
   @IBOutlet weak var PasswordField: UITextField!
   @IBOutlet weak var NextStepButton: UIButton!
-  
-  var semaphore = DispatchSemaphore( value: 0 )
-  var success = false
+  @IBOutlet var Progress: UIActivityIndicatorView!
     
   override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    if ApplicationUser.getInstance() != nil {
+      if (ApplicationUser.isTokenExpired()){
+        ApplicationUser.desctroyInstance()
+      } else {
+        self.navigationController?.popToRootViewController(animated: true);
+        return;
+      }
+    } else {
+      super.viewDidLoad()
+      // Do any additional setup after loading the view, typically from a nib.
+      self.NextStepButton.isEnabled = false
+      self.Progress.stopAnimating();
     }
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-  func checkFielValidity() -> Bool{
-    return
-      !(self.FirstNameField.text?.isEmpty)! &&
-      !(self.LastNameField.text?.isEmpty)! &&
-      !(self.UserNameField.text?.isEmpty)! &&
-      !(self.PasswordField.text?.isEmpty)!
+  override func didReceiveMemoryWarning() {
+      super.didReceiveMemoryWarning()
+      // Dispose of any resources that can be recreated.
   }
   
-  func clearFields(){
-    self.FirstNameField.text = ""
-    self.LastNameField.text = ""
-    self.UserNameField.text = ""
-    self.PasswordField.text = ""
+  func displayErroWarning(message: String){
+    let alertController = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
+    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+    
+    self.present(alertController, animated: true, completion: nil)
+  }
+  
+  func displaySuccessAndContinue(){
+    let alertController = UIAlertController(title: "Success", message: "You have successfully registered. Now you will proceed to the login screen.", preferredStyle: UIAlertControllerStyle.alert)
+    alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { (alert: UIAlertAction) in
+      self.performSegue(withIdentifier: "RegistrationSuccessfull", sender: alert)
+    }))
+  
+    self.present(alertController, animated: true, completion: nil)
+  }
+
+
+  func checkFieldValidity() -> Bool{
+    return
+      self.FirstNameField.hasText &&
+      self.LastNameField.hasText &&
+      self.UserNameField.hasText &&
+      self.PasswordField.hasText
+  }
+  
+  @IBAction func ValueChange(_ sender: UITextField) {
+    self.NextStepButton.isEnabled = checkFieldValidity();
   }
   
   func enableDisableFields(value: Bool){
-    self.FirstNameField.isUserInteractionEnabled = value
-    self.LastNameField.isUserInteractionEnabled = value
-    self.UserNameField.isUserInteractionEnabled = value
-    self.PasswordField.isUserInteractionEnabled = value
-    self.NextStepButton.isUserInteractionEnabled = value
+    self.FirstNameField.isEnabled = value
+    self.LastNameField.isEnabled = value
+    self.UserNameField.isEnabled = value
+    self.PasswordField.isEnabled = value
+    self.NextStepButton.isEnabled = value
   }
   
   func performRegistration() -> Bool {
-    if (!checkFielValidity()){
-      print("The fields are required");
-      self.success = false
-      self.semaphore.signal()
+    if (!checkFieldValidity()){
+      self.displayErroWarning(message: "All of the fields are required");
       return false;
     }
     
@@ -66,54 +86,30 @@ class RegistrationOne: UIViewController {
     
     let model = UserRegistrationModel(FirstName: self.FirstNameField.text!, LastName: self.LastNameField.text!, UserName: self.UserNameField.text!, Password: self.PasswordField.text!)
     
-    BaseService.PostRequest(urlString: "\(BaseService.baseURL)account/register", headers: headers, bodyDictionary: model.toJSON(), completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
+    BaseService.PostRequest(urlString: "\(BaseService.baseURL)api/account/register", headers: headers, bodyDictionary: model.toJSON(), completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
 
       if (error != nil){
-        print("Error has occured. The data are not saved");
-        self.success = false
-        self.semaphore.signal()
+        self.displayErroWarning(message: "Something went wrong. The data is not saved. Try again!");
+        self.enableDisableFields(value: true)
         return
       }
       
-      let JSONData = String(data: data!, encoding: String.Encoding.utf8) ?? "{}"
-      var users: Users;
-      do {
-        let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions())
-        users = Users(data: dataDictionary as! [String : AnyObject])
-      } catch {
-        print("Error deserializing")
-        self.success = false
-        self.semaphore.signal()
-        return;
-      }
+      self.enableDisableFields(value: true)
       
-      self.success = true
-      self.semaphore.signal()
-      
-      print("Id: \(users.Id ?? -1)");
-      print("Data: \(JSONData)");
-      
-            })
+      self.Progress.stopAnimating()
+      self.displaySuccessAndContinue()
+
+      })
     return true
   }
   
   @IBAction func NextStepClick(_ sender: UIButton) {
+    Progress.startAnimating()
     enableDisableFields(value: false);
     if (!performRegistration()){
+      Progress.stopAnimating()
       enableDisableFields(value: true)
-      print("Unsuccessfull attempt")
     }
-  }
-
-  override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-    semaphore.wait()
-    enableDisableFields(value: true)
-    let check = checkFielValidity() && success
-    if (check){
-            clearFields()
-    }
-    
-    return check
   }
   
 }

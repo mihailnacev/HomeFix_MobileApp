@@ -10,7 +10,7 @@ import UIKit
 
 class BaseService {
   
-  static var baseURL = "http://homefix.gear.host/api/"
+  static var baseURL = "http://homefix.gear.host/"
   
   static func GetRequest(
     urlString: String,
