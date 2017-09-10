@@ -1,0 +1,151 @@
+//
+//  WorkTimeScheduleControllerTableViewController.swift
+//  HomeFix_MobileApp
+//
+//  Created by Gjorche Cekovski on 9/10/17.
+//  Copyright © 2017 FINKI_Skopje. All rights reserved.
+//
+
+import UIKit
+
+class WorkTimeScheduleControllerTableViewController: UITableViewController {
+
+  var items: [TimeSchedules] = []
+  
+  func displayErroWarning(message: String){
+    let alertController = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
+    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+    
+    self.present(alertController, animated: true, completion: nil)
+  }
+  
+  func loadItems(){
+    let appuser = ApplicationUser.getInstance()
+    
+    var headers: Dictionary<String, String> = Dictionary<String, String>()
+    headers.updateValue("application/json", forKey: "Content-Type")
+    headers.updateValue("\(appuser?.TokenType ?? "") \(appuser?.AccessToken ?? "")", forKey: "Authorization")
+    
+    BaseService.GetRequest(urlString: "\(BaseService.baseURL)api/schedule/work?userId=\(appuser?.TheUser?.Id ?? 0)", headers: headers, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
+      
+      if (error != nil){
+        self.displayErroWarning(message: "Something went wrong")
+        return
+      }
+      
+      do {
+        let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions()) as! [[String: Any]]
+        
+        for data in dataDictionary {
+          let item = TimeSchedules(data:data)
+          self.items.append(item)
+        }
+      } catch {
+        self.displayErroWarning(message: "Something went wrong. Not all data could be loaded.")
+        return;
+      }
+
+      DispatchQueue.main.async {
+        self.tableView.reloadData()
+      }
+      
+    })
+  }
+  
+    override func viewDidLoad() {
+      if ApplicationUser.getInstance() != nil {
+        if (ApplicationUser.isTokenExpired()){
+          self.navigationController?.popToRootViewController(animated: true);
+          return;
+        }
+      } else {
+        self.navigationController?.popToRootViewController(animated: true);
+        return;
+      }
+      
+        super.viewDidLoad()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    
+      loadItems();
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return items.count
+    }
+
+  
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "workTimeCell", for: indexPath) as! WorkTimeScheduleTableViewCell
+
+      
+      let item = items[indexPath.row];
+      cell.FromField.text = "\(TimeSchedules.days[item.StartDay!]) \(item.StartTime ?? "00:00:00")"
+      cell.UntillField.text = "\(TimeSchedules.days[item.EndDay!]) \(item.EndTime ?? "00:00:00")"
+
+        return cell
+    }
+  
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
+
+    /*
+    // Override to support rearranging the table view.
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+
+    }
+    */
+
+    /*
+    // Override to support conditional rearranging of the table view.
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the item to be re-orderable.
+        return true
+    }
+    */
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

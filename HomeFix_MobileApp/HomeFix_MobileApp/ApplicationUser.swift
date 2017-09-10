@@ -10,10 +10,10 @@ import UIKit
 
 class ApplicationUser {
   
-  private var AccessToken: String?
-  private var TokenType: String?
-  private var ExpiresOn: Date?
-  private var TheUser: Users?
+  var AccessToken: String?
+  var TokenType: String?
+  var ExpiresOn: Date?
+  var TheUser: Users?
   
   private init(AccessToken: String, TokenType: String, ExpiresOn: Date){
     self.AccessToken = AccessToken

@@ -12,10 +12,6 @@
 		124BA6401F4C4911001B2C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124BA63E1F4C4911001B2C87 /* Main.storyboard */; };
 		124BA6431F4C4911001B2C87 /* HomeFix_MobileApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 124BA6411F4C4911001B2C87 /* HomeFix_MobileApp.xcdatamodeld */; };
 		124BA6451F4C4911001B2C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124BA6441F4C4911001B2C87 /* Assets.xcassets */; };
-		12512D011F4DA22200D074BD /* RegistrationTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D001F4DA22200D074BD /* RegistrationTwo.swift */; };
-		12512D031F4DB12E00D074BD /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D021F4DB12E00D074BD /* MasterTableViewController.swift */; };
-		12512D051F4DB16200D074BD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D041F4DB16200D074BD /* DetailsViewController.swift */; };
-		12512D071F4DB30400D074BD /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D061F4DB30300D074BD /* SplitViewController.swift */; };
 		12512D091F4DBB2300D074BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D081F4DBB2300D074BD /* MainViewController.swift */; };
 		126C0B921F5ED8D3009BB908 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B911F5ED8D2009BB908 /* Users.swift */; };
 		126C0B941F5EDB4A009BB908 /* UserProfessions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0B931F5EDB4A009BB908 /* UserProfessions.swift */; };
@@ -27,6 +23,9 @@
 		126C0BA21F5EE826009BB908 /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA11F5EE826009BB908 /* Currencies.swift */; };
 		126C0BA61F5EE954009BB908 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA51F5EE954009BB908 /* Contacts.swift */; };
 		126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */; };
+		1E62E7C91F65A62E007AC427 /* Profile Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62E7C81F65A62E007AC427 /* Profile Controller.swift */; };
+		1E62E7CB1F65AECE007AC427 /* WorkTimeScheduleControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62E7CA1F65AECE007AC427 /* WorkTimeScheduleControllerTableViewController.swift */; };
+		1E62E7CD1F65C92E007AC427 /* WorkTimeScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62E7CC1F65C92E007AC427 /* WorkTimeScheduleTableViewCell.swift */; };
 		1E70514B1F63F0BF00F8A08D /* ApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E70514A1F63F0BF00F8A08D /* ApiModels.swift */; };
 		1E7051521F641FF600F8A08D /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7051511F641FF600F8A08D /* BaseServices.swift */; };
 		1E87342A1F656E6000B46A4F /* ApplicationUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8734291F656E6000B46A4F /* ApplicationUser.swift */; };
@@ -41,10 +40,6 @@
 		124BA6421F4C4911001B2C87 /* HomeFix_MobileApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeFix_MobileApp.xcdatamodel; sourceTree = "<group>"; };
 		124BA6441F4C4911001B2C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		124BA6491F4C4912001B2C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12512D001F4DA22200D074BD /* RegistrationTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTwo.swift; sourceTree = "<group>"; };
-		12512D021F4DB12E00D074BD /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
-		12512D041F4DB16200D074BD /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		12512D061F4DB30300D074BD /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		12512D081F4DBB2300D074BD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		126C0B911F5ED8D2009BB908 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		126C0B931F5EDB4A009BB908 /* UserProfessions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfessions.swift; sourceTree = "<group>"; };
@@ -56,6 +51,9 @@
 		126C0BA11F5EE826009BB908 /* Currencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
 		126C0BA51F5EE954009BB908 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		126C0BA71F5EE9F5009BB908 /* BusySchedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusySchedules.swift; sourceTree = "<group>"; };
+		1E62E7C81F65A62E007AC427 /* Profile Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Profile Controller.swift"; sourceTree = "<group>"; };
+		1E62E7CA1F65AECE007AC427 /* WorkTimeScheduleControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTimeScheduleControllerTableViewController.swift; sourceTree = "<group>"; };
+		1E62E7CC1F65C92E007AC427 /* WorkTimeScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTimeScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		1E70514A1F63F0BF00F8A08D /* ApiModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiModels.swift; sourceTree = "<group>"; };
 		1E7051511F641FF600F8A08D /* BaseServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
 		1E8734291F656E6000B46A4F /* ApplicationUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationUser.swift; sourceTree = "<group>"; };
@@ -143,12 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				124BA63C1F4C4911001B2C87 /* RegistrationOne.swift */,
-				12512D001F4DA22200D074BD /* RegistrationTwo.swift */,
-				12512D021F4DB12E00D074BD /* MasterTableViewController.swift */,
-				12512D041F4DB16200D074BD /* DetailsViewController.swift */,
-				12512D061F4DB30300D074BD /* SplitViewController.swift */,
 				12512D081F4DBB2300D074BD /* MainViewController.swift */,
 				1E87342C1F65868500B46A4F /* MenuViewController.swift */,
+				1E62E7C81F65A62E007AC427 /* Profile Controller.swift */,
+				1E62E7CA1F65AECE007AC427 /* WorkTimeScheduleControllerTableViewController.swift */,
+				1E62E7CC1F65C92E007AC427 /* WorkTimeScheduleTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -229,21 +226,20 @@
 				126C0B921F5ED8D3009BB908 /* Users.swift in Sources */,
 				126C0BA61F5EE954009BB908 /* Contacts.swift in Sources */,
 				126C0B941F5EDB4A009BB908 /* UserProfessions.swift in Sources */,
-				12512D071F4DB30400D074BD /* SplitViewController.swift in Sources */,
-				12512D011F4DA22200D074BD /* RegistrationTwo.swift in Sources */,
 				126C0BA21F5EE826009BB908 /* Currencies.swift in Sources */,
 				1E87342A1F656E6000B46A4F /* ApplicationUser.swift in Sources */,
 				1E70514B1F63F0BF00F8A08D /* ApiModels.swift in Sources */,
+				1E62E7CD1F65C92E007AC427 /* WorkTimeScheduleTableViewCell.swift in Sources */,
+				1E62E7CB1F65AECE007AC427 /* WorkTimeScheduleControllerTableViewController.swift in Sources */,
 				126C0B9C1F5EE57E009BB908 /* Ratings.swift in Sources */,
+				1E62E7C91F65A62E007AC427 /* Profile Controller.swift in Sources */,
 				124BA63D1F4C4911001B2C87 /* RegistrationOne.swift in Sources */,
 				126C0B981F5EE12F009BB908 /* UserAddresses.swift in Sources */,
 				1E7051521F641FF600F8A08D /* BaseServices.swift in Sources */,
-				12512D031F4DB12E00D074BD /* MasterTableViewController.swift in Sources */,
 				1E87342D1F65868500B46A4F /* MenuViewController.swift in Sources */,
 				126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */,
 				126C0B9A1F5EE3B2009BB908 /* TimeSchedules.swift in Sources */,
 				124BA63B1F4C4911001B2C87 /* AppDelegate.swift in Sources */,
-				12512D051F4DB16200D074BD /* DetailsViewController.swift in Sources */,
 				12512D091F4DBB2300D074BD /* MainViewController.swift in Sources */,
 				126C0BA01F5EE707009BB908 /* ProfessionServices.swift in Sources */,
 			);
