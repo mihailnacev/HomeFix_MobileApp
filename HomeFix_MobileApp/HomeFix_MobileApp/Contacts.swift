@@ -12,13 +12,17 @@ class Contacts {
     
     var Id: Int?
     var PhoneNumber: String?
-    var ThePhoneOwner: Users?
   
     init() {}
     
-    init(PhoneNumber: String, ThePhoneOwner: Users){
+    init(Id: Int, PhoneNumber: String){
+        self.Id = Id
         self.PhoneNumber=PhoneNumber
-        self.ThePhoneOwner=ThePhoneOwner
     }
+  
+  init(data: [String:Any]) {
+    self.Id = data["Id"] as? Int
+    self.PhoneNumber = data["PhoneNumber"] as? String
+  }
     
 }

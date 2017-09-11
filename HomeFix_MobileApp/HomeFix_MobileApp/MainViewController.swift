@@ -106,8 +106,10 @@ class MainViewController: UIViewController {
     let task = session.dataTask(with: urlRequest,completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
       
       if (error != nil){
-        self.displayErroWarning(message: "Something went wrong");
-        self.enableDisableFields(value: true)
+        DispatchQueue.main.async {
+          self.displayErroWarning(message: "Something went wrong");
+          self.enableDisableFields(value: true)
+        }
         return
       }
       
@@ -118,18 +120,25 @@ class MainViewController: UIViewController {
           do {
             dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions()) as! [String : Any]
             ApplicationUser.newInstance(jsonDictionary: dataDictionary)
-            self.displaySuccessAndContinue()
+            DispatchQueue.main.async {
+              self.displaySuccessAndContinue()
+            }
           } catch {
+            DispatchQueue.main.async {
              self.displayErroWarning(message: "Something went wrong");
+            }
           }
         
       } else {
-        self.displayErroWarning(message: "Invalid username or password! Please try again.");
+        DispatchQueue.main.async {
+          self.displayErroWarning(message: "Invalid username or password! Please try again.");
+        }
       }
       
-      self.enableDisableFields(value: true)
-      
-      self.Progress.stopAnimating()
+      DispatchQueue.main.async {
+        self.enableDisableFields(value: true)
+        self.Progress.stopAnimating()
+      }
       
     })
     task.resume()

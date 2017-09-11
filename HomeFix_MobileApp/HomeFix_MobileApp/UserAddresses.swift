@@ -16,16 +16,25 @@ class UserAddresses {
     var Country: String?
     var Latitude: Float?
     var Longitude: Float?
-    var TheUserLivingOnThisAddress: Users?
+  
+  init() {}
     
-    init(StreetName: String, City: String, Country: String, Latitude: Float, Longitude: Float, TheUserLivingOnThisAddress: Users){
+  init(Id:Int, StreetName: String, City: String, Country: String, Latitude: Float, Longitude: Float){
+        self.Id = Id
         self.StreetName=StreetName
         self.City=City
         self.Country=Country
         self.Latitude=Latitude
         self.Longitude=Longitude
-        self.TheUserLivingOnThisAddress=TheUserLivingOnThisAddress
     }
   
-  init() {}
+  init(data: [String: Any]) {
+    self.Id = data["Id"] as? Int
+    self.StreetName = data["StreetName"] as? String
+    self.City = data["City"] as? String
+    self.Country = data["Country"] as? String
+    self.Latitude = data["Latitude"] as? Float
+    self.Longitude = data["Longitude"] as? Float
+  }
+  
 }

@@ -71,15 +71,20 @@ class ApplicationUser {
         return
       }
       
-      var users: Users;
-      do {
-      let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions())
-        users = Users(data: dataDictionary as! [String : AnyObject])
-      } catch {
-        return;
-      }
+      let httpresponse = response as? HTTPURLResponse
+      if ((httpresponse?.statusCode)! >= 200 && (httpresponse?.statusCode)! <= 299 ){
+          var users: Users;
+          do {
+              let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions())
+              users = Users(data: dataDictionary as! [String : AnyObject])
+          } catch {
+              return;
+          }
       
-      self.TheUser = users;
+          self.TheUser = users;
+      } else {
+        ApplicationUser.desctroyInstance()
+      }
       
     })
   }

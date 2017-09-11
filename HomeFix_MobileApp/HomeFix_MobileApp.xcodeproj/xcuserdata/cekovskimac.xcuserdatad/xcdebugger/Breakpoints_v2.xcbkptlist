@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeFix_MobileApp/ApplicationUser.swift"
-            timestampString = "526743677.183447"
+            timestampString = "526780964.116999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "LoadUserData()"
             landmarkType = "7">
          </BreakpointContent>

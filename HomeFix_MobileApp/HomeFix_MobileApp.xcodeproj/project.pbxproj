@@ -30,6 +30,10 @@
 		1E7051521F641FF600F8A08D /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7051511F641FF600F8A08D /* BaseServices.swift */; };
 		1E87342A1F656E6000B46A4F /* ApplicationUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8734291F656E6000B46A4F /* ApplicationUser.swift */; };
 		1E87342D1F65868500B46A4F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E87342C1F65868500B46A4F /* MenuViewController.swift */; };
+		1ED0938C1F66058200C5B0CD /* ContactNumberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0938B1F66058200C5B0CD /* ContactNumberTableViewController.swift */; };
+		1ED0939A1F660E6600C5B0CD /* ContactAddressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED093991F660E6600C5B0CD /* ContactAddressTableViewController.swift */; };
+		1ED0939C1F66145400C5B0CD /* ProfessionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0939B1F66145400C5B0CD /* ProfessionTableViewController.swift */; };
+		1ED0939E1F6650F500C5B0CD /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0939D1F6650F500C5B0CD /* ServicesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		1E7051511F641FF600F8A08D /* BaseServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
 		1E8734291F656E6000B46A4F /* ApplicationUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationUser.swift; sourceTree = "<group>"; };
 		1E87342C1F65868500B46A4F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1ED0938B1F66058200C5B0CD /* ContactNumberTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactNumberTableViewController.swift; sourceTree = "<group>"; };
+		1ED093991F660E6600C5B0CD /* ContactAddressTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactAddressTableViewController.swift; sourceTree = "<group>"; };
+		1ED0939B1F66145400C5B0CD /* ProfessionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessionTableViewController.swift; sourceTree = "<group>"; };
+		1ED0939D1F6650F500C5B0CD /* ServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,10 +152,22 @@
 				12512D081F4DBB2300D074BD /* MainViewController.swift */,
 				1E87342C1F65868500B46A4F /* MenuViewController.swift */,
 				1E62E7C81F65A62E007AC427 /* Profile Controller.swift */,
+				1ED0938A1F66042300C5B0CD /* Worktime */,
+				1ED0938B1F66058200C5B0CD /* ContactNumberTableViewController.swift */,
+				1ED093991F660E6600C5B0CD /* ContactAddressTableViewController.swift */,
+				1ED0939B1F66145400C5B0CD /* ProfessionTableViewController.swift */,
+				1ED0939D1F6650F500C5B0CD /* ServicesTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1ED0938A1F66042300C5B0CD /* Worktime */ = {
+			isa = PBXGroup;
+			children = (
 				1E62E7CA1F65AECE007AC427 /* WorkTimeScheduleControllerTableViewController.swift */,
 				1E62E7CC1F65C92E007AC427 /* WorkTimeScheduleTableViewCell.swift */,
 			);
-			name = Controllers;
+			name = Worktime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,16 +252,20 @@
 				1E62E7CD1F65C92E007AC427 /* WorkTimeScheduleTableViewCell.swift in Sources */,
 				1E62E7CB1F65AECE007AC427 /* WorkTimeScheduleControllerTableViewController.swift in Sources */,
 				126C0B9C1F5EE57E009BB908 /* Ratings.swift in Sources */,
+				1ED0939A1F660E6600C5B0CD /* ContactAddressTableViewController.swift in Sources */,
 				1E62E7C91F65A62E007AC427 /* Profile Controller.swift in Sources */,
 				124BA63D1F4C4911001B2C87 /* RegistrationOne.swift in Sources */,
 				126C0B981F5EE12F009BB908 /* UserAddresses.swift in Sources */,
 				1E7051521F641FF600F8A08D /* BaseServices.swift in Sources */,
+				1ED0938C1F66058200C5B0CD /* ContactNumberTableViewController.swift in Sources */,
 				1E87342D1F65868500B46A4F /* MenuViewController.swift in Sources */,
 				126C0BA81F5EE9F5009BB908 /* BusySchedules.swift in Sources */,
 				126C0B9A1F5EE3B2009BB908 /* TimeSchedules.swift in Sources */,
 				124BA63B1F4C4911001B2C87 /* AppDelegate.swift in Sources */,
+				1ED0939C1F66145400C5B0CD /* ProfessionTableViewController.swift in Sources */,
 				12512D091F4DBB2300D074BD /* MainViewController.swift in Sources */,
 				126C0BA01F5EE707009BB908 /* ProfessionServices.swift in Sources */,
+				1ED0939E1F6650F500C5B0CD /* ServicesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

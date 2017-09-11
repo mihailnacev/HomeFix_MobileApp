@@ -13,12 +13,19 @@ class Professions {
     var Id: Int?
     var ProfessionName: String?
     var ProfessionDescription: String?
-    
-    init(ProfessionName: String, ProffessionDescription: String){
+  
+  init() {}
+  
+  init(Id:Int, ProfessionName: String, ProffessionDescription: String){
+        self.Id = Id
         self.ProfessionName=ProfessionName
         self.ProfessionDescription=ProffessionDescription
     }
 
-  init() {}
+  init(data: [String: Any]){
+    self.Id = data["Id"] as? Int
+    self.ProfessionName = data["ProfessionName"] as? String
+    self.ProfessionDescription = data["ProfessionDescription"] as? String
+  }
   
 }

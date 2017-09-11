@@ -89,16 +89,27 @@ class RegistrationOne: UIViewController {
     BaseService.PostRequest(urlString: "\(BaseService.baseURL)api/account/register", headers: headers, bodyDictionary: model.toJSON(), completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
 
       if (error != nil){
-        self.displayErroWarning(message: "Something went wrong. The data is not saved. Try again!");
-        self.enableDisableFields(value: true)
+        DispatchQueue.main.async {
+          self.displayErroWarning(message: "Something went wrong. The data is not saved. Try again!");
+          self.enableDisableFields(value: true)
+        }
+        
         return
       }
       
-      self.enableDisableFields(value: true)
-      
+      DispatchQueue.main.async {
+        self.enableDisableFields(value: true)
       self.Progress.stopAnimating()
-      self.displaySuccessAndContinue()
-
+      }
+      
+      
+      let httpresponse = response as? HTTPURLResponse
+      if ((httpresponse?.statusCode)! >= 200 && (httpresponse?.statusCode)! <= 299 ){
+        DispatchQueue.main.async {
+           self.displaySuccessAndContinue()
+        }
+      }
+      
       })
     return true
   }

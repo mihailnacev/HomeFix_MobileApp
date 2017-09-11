@@ -1,16 +1,16 @@
 //
-//  WorkTimeScheduleControllerTableViewController.swift
+//  ContactNumberTableViewController.swift
 //  HomeFix_MobileApp
 //
-//  Created by Gjorche Cekovski on 9/10/17.
+//  Created by Gjorche Cekovski on 9/11/17.
 //  Copyright © 2017 FINKI_Skopje. All rights reserved.
 //
 
 import UIKit
 
-class WorkTimeScheduleControllerTableViewController: UITableViewController {
-
-  var items: [TimeSchedules] = []
+class ContactNumberTableViewController: UITableViewController {
+  
+  var items: [Contacts] = []
   
   func displayErroWarning(message: String){
     let alertController = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -27,7 +27,7 @@ class WorkTimeScheduleControllerTableViewController: UITableViewController {
     headers.updateValue("application/json", forKey: "Content-Type")
     headers.updateValue("\(appuser?.TokenType ?? "") \(appuser?.AccessToken ?? "")", forKey: "Authorization")
     
-    BaseService.GetRequest(urlString: "\(BaseService.baseURL)api/schedule/work?userId=\(appuser?.TheUser?.Id ?? 0)", headers: headers, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
+    BaseService.GetRequest(urlString: "\(BaseService.baseURL)api/contact/number?userId=\(appuser?.TheUser?.Id ?? 0)", headers: headers, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
       
       if (error != nil){
         DispatchQueue.main.async {
@@ -38,12 +38,12 @@ class WorkTimeScheduleControllerTableViewController: UITableViewController {
       
       let httpresponse = response as? HTTPURLResponse
       if ((httpresponse?.statusCode)! >= 200 && (httpresponse?.statusCode)! <= 299 ){
-      
-      do {
-          let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions()) as! [[String: Any]]
         
+        do {
+          let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions()) as! [[String: Any]]
+          
           for data in dataDictionary {
-            let item = TimeSchedules(data:data)
+            let item = Contacts(data:data)
             self.items.append(item)
           }
         } catch {
@@ -52,7 +52,7 @@ class WorkTimeScheduleControllerTableViewController: UITableViewController {
           }
           return;
         }
-
+        
       }
       
       DispatchQueue.main.async {
@@ -61,7 +61,7 @@ class WorkTimeScheduleControllerTableViewController: UITableViewController {
       
     })
   }
-  
+
     override func viewDidLoad() {
       if ApplicationUser.getInstance() != nil {
         if (ApplicationUser.isTokenExpired()){
@@ -72,7 +72,6 @@ class WorkTimeScheduleControllerTableViewController: UITableViewController {
         self.navigationController?.popToRootViewController(animated: true);
         return;
       }
-      
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -80,7 +79,6 @@ class WorkTimeScheduleControllerTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    
       loadItems();
     }
 
@@ -92,6 +90,7 @@ class WorkTimeScheduleControllerTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
@@ -102,12 +101,9 @@ class WorkTimeScheduleControllerTableViewController: UITableViewController {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "workTimeCell", for: indexPath) as! WorkTimeScheduleTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contactNumberCell", for: indexPath)
 
-      
-      let item = items[indexPath.row];
-      cell.FromField.text = "\(TimeSchedules.days[item.StartDay!]) \(item.StartTime ?? "00:00:00")"
-      cell.UntillField.text = "\(TimeSchedules.days[item.EndDay!]) \(item.EndTime ?? "00:00:00")"
+        cell.textLabel?.text = "\(items[indexPath.row].PhoneNumber ?? "000")"
 
         return cell
     }

@@ -11,16 +11,24 @@ import UIKit
 class UserProfessions{
     
     var Id: Int?
+  var UserId: Int?
+  var ProfessionId: Int?
     var TheProfession: Professions?
-    var User: Users?
-    var Services: [ProfessionServices]?
-    
-    init(TheProfession: Professions, User: Users, Services: [ProfessionServices]){
-        self.TheProfession=TheProfession
-        self.User=User
-        self.Services=Services
-    }
   
   init() {}
+    
+  init(Id: Int, UserId: Int, ProfessionId: Int, TheProfession: Professions){
+    self.Id = Id;
+    self.ProfessionId = ProfessionId
+    self.UserId = UserId
+        self.TheProfession=TheProfession
+    }
+  
+  init(data: [String: Any]){
+    self.Id = data["Id"] as? Int
+    self.UserId = data["UserId"] as? Int
+    self.ProfessionId = data["ProfessionId"] as? Int
+    self.TheProfession = Professions(data: data["TheProfession"] as! [String : Any])
+  }
 
 }
